@@ -8,47 +8,87 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<button
-  type="button"
-  class="btn btn-primary"
-  data-bs-toggle="modal"
-  data-bs-target="#signupModal">
-  Sign Up
-</button>
+		 <button
+    type="button"
+    class="btn btn-primary"
+    data-toggle="modal"
+    data-target="#signupModal"
+  >
+    Sign Up
+  </button>
 
-<div class="modal fade" id="signupModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="signupModal"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
 
-      <div class="modal-header">
-        <h5 class="modal-title">Create Account</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title">Create Account</h5>
+          <button
+            type="button"
+            class="close btn-close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label>Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+              >
+              <small class="form-text text-muted">
+                Your information is safe with us.
+              </small>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+              >
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Confirm Password"
+              >
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-success">
+              Submit
+            </button>
+
+          </form>
+        </div>
+
       </div>
-
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Email address</label>
-            <input type="email" class="form-control" placeholder="Enter email">
-            <div class="form-text">Your information is safe with us.</div>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="password" class="form-control" placeholder="Password">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" placeholder="Confirm Password">
-          </div>
-
-          <button type="submit" class="btn btn-success">Submit</button>
-        </form>
-      </div>
-
     </div>
   </div>
-</div>
+
 	</body>
 </html>
